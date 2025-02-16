@@ -20,7 +20,7 @@ spec:
         app: myapp
     spec:
       containers:
-      - image: us.icr.io/<your SN labs namespace>/myapp:v1
+      - image: Docker/samueldocks/myapp:v1
         imagePullPolicy: Always
         name: myapp
         ports:
@@ -29,5 +29,6 @@ spec:
         resources:
           limits:
             cpu: 50m
+            memory: 1m
           requests:
             cpu: 20m
